@@ -1,0 +1,32 @@
+{
+  "name": "graphql-course",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "npm run compile && node ./dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Androbat/graphQL-course.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Androbat/graphQL-course/issues"
+  },
+  "homepage": "https://github.com/Androbat/graphQL-course#readme",
+  "description": "",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^22.14.1",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "@apollo/server": "^4.12.0",
+    "graphql": "^16.10.0",
+    "nodemon": "^3.1.9"
+  }
+}
