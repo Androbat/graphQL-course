@@ -16,6 +16,15 @@ const resolvers = {
         // parant is the first parameter
         review: (_, args) => db.reviews.find((review) => review.id === args.id)
     },
+    Game: {
+        // 
+        reviews(parent){
+            
+            return db.reviews.filter((review) => {
+                return review.game_id === parent.id
+            })
+        }
+    }
 
 };
 
